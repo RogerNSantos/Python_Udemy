@@ -11,16 +11,20 @@
 
 #Criando uma classe carro
 class Carro:
-    ...
+    
+    def __init__(self, nome, cor):  # Inicializando os atributos
+        self.nome = nome
+        self.cor = cor
+    
 #Criando Objeto carro1 e seus atributos
-carro1 = Carro()
-carro1.nome = 'BMW'
-carro1.cor = 'Preta'
-
-#Criando ojeto carro2 e seus atributos
-carro2 = Carro()
-carro2.nome = 'FIAT'
-carro2.cor = 'Azul'
+carro1 = Carro('BMW', 'PRETA')
+#carro1.nome = 'BMW'
+#carro1.cor = 'Preta'
+ 
+#Criando Ojeto carro2 e seus atributos
+carro2 = Carro('FIAT', 'AZUL')
+#carro2.nome = 'FIAT'
+#$carro2.cor = 'Azul'
 
 print(carro1.nome)
 print(carro1.cor)
